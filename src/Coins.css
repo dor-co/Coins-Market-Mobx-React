@@ -1,0 +1,30 @@
+.coin-container{
+    display: flex;
+    justify-content: center;
+}
+
+.coin-row{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    height: 300px;
+    border-bottom: 1px solid #000;
+    width: 1000px;
+}
+.red{
+    color: #FF0000;
+}
+
+.green{
+    color: #2CA311;
+}
+
+.coin img{
+    width: 80px;
+    height: 80px;
+}
+
+.coin-data{
+    margin-left: 50px;
+}

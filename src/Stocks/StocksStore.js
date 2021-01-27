@@ -5,11 +5,11 @@ export default extendObservable(this, {
   loading: false,
   loadStocks: action(async () => {
     this.loading = true;
-    const response = await fetch("http://api.marketstack.com/v1/tickers?access_key=a8c3276959a85f89f26882a88ece22e6");
+    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false");
     const json = await response.json();
     runInAction(() => {
       // enter to stocks array the data fron the api
-      this.stocks = json.results;
+      this.stocks = json.data;
       this.loading = false;
     });
   })
