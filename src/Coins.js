@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer} from 'mobx-react';
 import './Coins.css';
 
 const Coins = ({ image, name, symbol, price, volume, priceChange }) => {
@@ -24,4 +25,4 @@ const Coins = ({ image, name, symbol, price, volume, priceChange }) => {
     )
 }
 
-export default Coins
+export default observer(Coins);

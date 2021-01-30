@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from "mobx-react";
+import CoinsStore from './CoinsStore'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider CoinsStore={CoinsStore}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
