@@ -5,7 +5,7 @@ import CoinsList from './CoinList';
 
 function App() {
   return (
-          <CoinsList />
+    <CoinsList />
   );
 }
 
