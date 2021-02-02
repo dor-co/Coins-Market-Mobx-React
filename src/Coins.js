@@ -15,10 +15,9 @@ const Coins = ({ image, name, symbol, price, volume, priceChange }) => {
                     <p>${price}</p>
                     {/* .toLocaleString() is the ',' every 3 numbers in volume */}
                     <p>${volume.toLocaleString()}</p> 
-                    {/* .toFixed() is the number of numbers after the dot  */}
                     {priceChange < 0 ? (
-                        <p className='red'>{priceChange.toFixed(2)}%</p>
-                    ) : (<p className='green'>{priceChange.toFixed(2)}%</p>)}
+                        <p className='red'>{priceChange}%</p>
+                    ) : (<p className='green'>{priceChange}%</p>)}
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ class CoinList extends React.Component {
   render() {
     return (
       <div className='coins-app'>
-        <h1 className='appTitle'>Test Api Coins</h1>
+        <h1 className='appTitle'>Coins Market</h1>
         {/* the map() passing on all the the array coinsData from CoinsStore */}
         {this.props.CoinsStore.coinsData.map(coin => {
           return (
