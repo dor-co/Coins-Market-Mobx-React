@@ -8,13 +8,13 @@ const Coins = ({ image, name, symbol, price, volume, priceChange }) => {
             <div className='coin-row'>
                 <div className='coin'>
                     <img src={image} />
-                    <h1>{name}</h1>
-                    <p>{symbol}</p>
+                    <h1 className='coinsText'>{name}</h1>
+                    <p className='coinsText'>{symbol}</p>
                 </div>
                 <div className='coin-data'>
-                    <p>${price}</p>
+                    <p className='coinsText'>${price}</p>
                     {/* .toLocaleString() is the ',' every 3 numbers in volume */}
-                    <p>${volume.toLocaleString()}</p> 
+                    <p className='coinsText'>${volume.toLocaleString()}</p> 
                     {priceChange < 0 ? (
                         <p className='red'>{priceChange}%</p>
                     ) : (<p className='green'>{priceChange}%</p>)}

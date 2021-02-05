@@ -1,11 +1,24 @@
 import React from "react";
 import './App.css';
 import CoinsList from './CoinList';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Favorite from './Favorite';
+import Pdf from './Pdf';
+import Nav from './Nav';
 
 function App() {
   return (
-    <CoinsList />
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route path='/' exact component={CoinsList} />
+          <Route path='/pdf' component={Pdf} />
+          <Route path='/favorite' component={Favorite} />
+        </Switch>
+      </div>
+    </Router>
+
   );
 }
 

@@ -3,18 +3,26 @@
     justify-content: center;
 }
 
+.coinsText{
+    color: rgb(130, 28, 214);
+}
+
+.appTitle{
+    color:rgb(130, 28, 214);
+}
+
 .coin-row{
     display: flex;
     flex-direction: row;
     justify-items: start;
     align-items: center;
-    height: 300px;
+    height: 250px;
     border-bottom: 1px solid #000;
     width: 1000px;
 }
 .red{
     color: #FF0000;
-}
+ }
 
 .green{
     color: #27960e;

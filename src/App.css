@@ -1,11 +1,54 @@
 *{
   font-weight: Open Sans, sans-serif;
   font-weight: 300;
-  color: #7b3790;
 }
 
 .appTitle{
   display: flex;
   justify-content: center;
   font-size: 40px;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(130, 28, 214);
+  color: #fff;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-link {
+  width: 40%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+  transition: 100ms;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: rgb(189, 189, 189);
+  transition: 100ms;
+}
+
+.logoTitle{
+  color:#fff;
+  font-size: 30px;
 }
