@@ -1,7 +1,7 @@
 import React from "react";
 import { observer, inject } from 'mobx-react';
 import Coins from './Coins'
-import './Coins.css';
+import '../style/Coins.css';
 
 class CoinList extends React.Component {
 
@@ -17,7 +17,7 @@ class CoinList extends React.Component {
   render() {
     return (
       <div className='coins-app'>
-        <h1 className='appTitle'>Coins Market</h1>
+        <h1 className='appTitle'>Home</h1>
         {/* the map() passing on all the the array coinsData from CoinsStore */}
         {this.props.CoinsStore.coinsData.map(coin => {
           return (

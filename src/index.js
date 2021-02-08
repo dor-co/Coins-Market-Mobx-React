@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './style/index.css';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "mobx-react";
-import CoinsStore from './CoinsStore'
+import CoinsStore from './mobx/CoinsStore'
 
 ReactDOM.render(
   <Provider CoinsStore={CoinsStore}>

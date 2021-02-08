@@ -1,4 +1,4 @@
-import './Coins.css';
+import '../style/Coins.css';
 
 function Favorite() {
   return (

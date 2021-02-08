@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../style/App.css';
 import { Link } from 'react-router-dom';
 import * as GiIcons from 'react-icons/gi';
 import * as AiIcons from 'react-icons/ai';
@@ -9,7 +9,7 @@ function Nav() {
 
     return (
         <nav>
-            <h3 className='logoTitle'><GiIcons.GiCoins /> Coins Web</h3>
+            <h3 className='logoTitle'><GiIcons.GiCoins /> Coins Market</h3>
             <ul className='nav-link'>
                 <Link className='link' to='/'>
                     <li><AiIcons.AiOutlineHome /> Home</li>

@@ -1,4 +1,4 @@
-import './Coins.css';
+import '../style/Coins.css';
 import PdfReader from './PdfReader';
 
 function Pdf() {

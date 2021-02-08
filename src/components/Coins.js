@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import './Coins.css';
+import '../style/Coins.css';
 
 const Coins = ({ image, name, symbol, price, volume, priceChange }) => {
     return (

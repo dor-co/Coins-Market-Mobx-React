@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import '../style/App.css';
 import CoinsList from './CoinList';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Favorite from './Favorite';
