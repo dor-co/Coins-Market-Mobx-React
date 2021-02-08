@@ -1,21 +1,24 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import * as GiIcons from 'react-icons/gi';
+import * as AiIcons from 'react-icons/ai';
+import * as MdIcons from 'react-icons/md';
 
 function Nav() {
 
     return (
         <nav>
-            <h3 className='logoTitle'>App Coins</h3>
+            <h3 className='logoTitle'><GiIcons.GiCoins /> Coins Web</h3>
             <ul className='nav-link'>
                 <Link className='link' to='/'>
-                    <li>Home</li>
+                    <li><AiIcons.AiOutlineHome /> Home</li>
                 </Link>
                 <Link className='link' to='/pdf'>
-                    <li>PDF</li>
+                    <li><AiIcons.AiOutlineFilePdf /> PDF</li>
                 </Link>
                 <Link className='link' to='/favorite'>
-                    <li>Favorite</li>
+                    <li><MdIcons.MdFavoriteBorder /> Favorite</li>
                 </Link>
             </ul>
         </nav>
