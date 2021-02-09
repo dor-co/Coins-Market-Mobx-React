@@ -9,16 +9,16 @@ function Nav() {
 
     return (
         <nav>
-            <h3 className='logoTitle'><GiIcons.GiCoins /> Coins Market</h3>
+            <h3 className='logoTitle'><span className='iconTitle'><GiIcons.GiCoins /></span> Coins Market</h3>
             <ul className='nav-link'>
                 <Link className='link' to='/'>
-                    <li><AiIcons.AiOutlineHome /> Home</li>
+                    <li><span className='icon'><AiIcons.AiOutlineHome /></span> Home</li>
                 </Link>
                 <Link className='link' to='/pdf'>
-                    <li><AiIcons.AiOutlineFilePdf /> PDF</li>
+                    <li><span className='icon'><AiIcons.AiOutlineFilePdf /></span> PDF</li>
                 </Link>
                 <Link className='link' to='/favorite'>
-                    <li><MdIcons.MdFavoriteBorder /> Favorite</li>
+                    <li><span className='icon'><MdIcons.MdFavoriteBorder /></span> Favorite</li>
                 </Link>
             </ul>
         </nav>
